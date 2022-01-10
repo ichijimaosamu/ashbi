@@ -1,0 +1,457 @@
+//変数インクルード
+@import 'core';
+@import 'compass';
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+
+File Name: style.scss
+
+------------------------------------------------------------------------
+----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+目次
+
+1.	共通使用変数定義
+2.	ブラウザデフォルトスタイルリセット
+3.	HTMLタグ
+4.	container
+5.	共通部分
+6.	header
+7.	content
+8.	main
+9.	footer
+10.	ページ別個別設定
+
+------------------------------------------------------------------------
+----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------
+1.	共通使用変数定義
+----------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------
+2.	ブラウザデフォルトスタイルリセット
+----------------------------------------------------------------------*/
+@include reset;
+//compass
+@include reset-html5;
+//オリジナル
+@include resethtml5;
+
+
+/*----------------------------------------------------------------------
+3.	HTMLタグ
+----------------------------------------------------------------------*/
+@include layout-tags;
+
+
+/*----------------------------------------------------------------------
+4.	container
+----------------------------------------------------------------------*/
+@include layout-container;
+
+
+/*----------------------------------------------------------------------
+5.	共通部分
+----------------------------------------------------------------------*/
+@include common;
+
+.box {
+	padding: 120px 0 90px;
+
+	&__title {
+		position: relative;
+		color: $main_color;
+		font-size: 38px;
+		font-weight: bold;
+		text-align: center;
+
+		&__icon {
+			@include border-radius(50%);
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 65px;
+			width: 80px;
+			height: 80px;
+			margin: auto;
+			background: $main_color;
+
+			&.-publications {
+				background: #FFF;
+			}
+
+			img {
+				width: 80px;
+				height: 80px;
+			}
+		}
+	}
+
+	&__inner {
+		width: 1000px;
+		margin: auto;
+	}
+}
+
+.link-more {
+	width: 280px;
+	margin: auto;
+
+	a {
+		@include border-radius(25px);
+		@include box-shadow(3px 3px 0 rgba($main_color, .3));
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		height: 50px;
+		background: $main_color;
+		color: #FFF;
+		font-size: 18px;
+
+		&:before {
+			@include rotate(45deg);
+			display: inline-block;
+			content: "";
+			position: absolute;
+			right: 22px;
+			top: 0;
+			bottom: 0;
+			width: 7px;
+			height: 7px;
+			margin: auto;
+			border-top: 3px solid #FFF;
+			border-right: 3px solid #FFF;
+		}
+
+		&.-publications {
+			@include box-shadow(3px 3px 0 rgba(#FFF, .3));
+			background: #FFF;
+			color: $main_color;
+
+			&:before {
+				border-color: $main_color;
+			}
+		}
+	}
+}
+
+/*----------------------------------------------------------------------
+6.	#header
+----------------------------------------------------------------------*/
+@include layout-header;
+
+
+/*----------------------------------------------------------------------
+7.	#content
+----------------------------------------------------------------------*/
+@include layout-content;
+
+
+/*----------------------------------------------------------------------
+8.	#main
+----------------------------------------------------------------------*/
+@include layout-main;
+
+
+/*----------------------------------------------------------------------
+9.	#footer
+----------------------------------------------------------------------*/
+@include layout-footer;
+
+
+/*----------------------------------------------------------------------
+10.	ページ別個別設定
+----------------------------------------------------------------------*/
+
+.main {
+	&__fv {
+		height: 600px;
+		background: url("../img/main_fv_bg.jpg") center center no-repeat;
+		@include background-size(cover);
+
+		&__inner {
+			width: 1000px;
+			margin: auto;
+			padding-top: 445px;
+		}
+
+		&__title {
+			@include box-shadow(3px 3px 0 rgba(#000, .1));
+			display: inline-block;
+			padding: 20px 28px;
+			background: $main_color;
+			color: #FFF;
+			font-size: 26px;
+			font-weight: bold;
+		}
+	}
+}
+
+.research {
+	padding-bottom: 0;
+
+	&__title {
+		position: relative;
+		padding-bottom: 170px;
+
+		&:before {
+			@include rotate(180deg);
+			content:"";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 0 200px 100vw;
+			border-color: transparent transparent  transparent rgba($main_color, .05);
+		}
+	}
+
+	&__bg {
+		padding-bottom: 90px;
+		background: rgba($main_color, .05);
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+
+	&__text {
+		width: 460px;
+		font-size: 16px;
+		line-height: (34/16);
+	}
+}
+
+.publications {
+	background: url("../img/publications_bg.png") center center no-repeat $main_color;
+	@include background-size(cover);
+
+	&__title {
+		margin-bottom: 140px;
+		color: #FFF;
+	}
+
+	&__list {
+		margin-bottom: 50px;
+		padding: 35px 50px;
+		background: #FFF;
+	}
+
+	&__item {
+		font-size: 13px;
+		line-height: (24/13);
+
+		&:not(:first-child) {
+			padding-top: 25px;
+		}
+		&:not(:last-child) {
+			padding-bottom: 25px;
+			border-bottom: 1px solid #C7C4C3;
+		}
+
+		&__link {
+			display: inline-block;
+			margin-left: 12px;
+			line-height: 1;
+
+			a {
+				display: inline-block;
+				padding: 2px 4px 3px;
+				background: rgba($main_color, .6);
+				color: #FFF;
+				font-size: 13px;
+			}
+		}
+	}
+}
+
+.news {
+	padding-bottom: 0;
+
+	&__title {
+		padding-bottom: 170px;
+
+		&:before {
+			content:"";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 200px 0 0 100vw;
+			border-color: transparent transparent  transparent rgba($main_color, .05);
+		}
+	}
+
+	&__bg {
+		padding: 45px 0 90px;
+		background: rgba($main_color, .05);
+	}
+
+	&__inner {
+		margin-bottom: 50px;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		width: 300px;
+		background: #FFF;
+
+		&:not(:first-child) {
+			margin-left: 50px;
+		}
+
+		a {
+			display: block;
+			position: relative;
+			color: $text_color;
+		}
+
+		&__term {
+			position: relative;
+			height: 0;
+			padding-top: (160%/300) * 100;
+
+			img {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				margin: auto;
+				object-fit: cover;
+			}
+		}
+
+		&__description {
+			padding: 22px 20px;
+			font-size: 15px;
+			line-height: (24/15);
+		}
+
+		&__date {
+			display: block;
+			margin-bottom: 15px;
+			padding-bottom: 12px;
+			color: $main_color;
+			font-size: 15px;
+			border-bottom: 1px solid #C7C4C3;
+		}
+
+		&__cate {
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding: 4px 12px 6px;
+			background: $main_color;
+			color: #FFF;
+			font-size: 14px;
+		}
+	}
+}
+
+.recruit {
+	padding: 100px 0 150px;
+	background: url("../img/recruit_bg.png") center center no-repeat $main_color;
+	@include background-size(cover);
+
+	&__title {
+		display: flex;
+		align-items: center;
+		width: 1000px;
+		margin: 0 auto 40px;
+		color: #FFF;
+		font-size: 38px;
+		font-weight: bold;
+
+		&__icon {
+			@include border-radius(50%);
+			display: inline-block;
+			width: 80px;
+			height: 80px;
+			margin-right: 20px;
+			background: #FFF;
+
+			img {
+				width: 80px;
+				height: 80px;
+			}
+		}
+	}
+
+	&__text {
+		margin-bottom: 40px;
+		color: #FFF;
+		font-size: 16px;
+		line-height: (34/16);
+
+		a {
+			color: #FFF;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: -20px;
+	}
+
+	&__item {
+		margin: 20px 25px 0 0;
+
+		a {
+			@include border-radius(6px);
+			display: block;
+			position: relative;
+			padding: 13px 45px 13px 15px;
+			background: #FFF;
+			color: $main_color;
+			font-size: 16px;
+			font-weight: bold;
+
+			&:before,
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+
+			&:before {
+				@include border-radius(50%);
+				display: flex;
+				right: 11px;
+				width: 18px;
+				height: 18px;
+				background: $main_color;
+			}
+
+			&:after {
+				@include rotate(45deg);
+				display: inline-block;
+				right: 18px;
+				width: 4px;
+				height: 4px;
+				border-top: 2px solid #FFF;
+				border-right: 2px solid #FFF;
+			}
+		}
+	}
+}

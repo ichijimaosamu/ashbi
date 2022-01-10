@@ -1,7 +1,11 @@
 @mixin layout-tags {
 	html ,
 	body {
+		min-width: 1060px;
 		height: 100%;
+		@include sp() {
+			min-width: auto;
+		}
 	}
 
 	html {
@@ -10,7 +14,7 @@
 
 	body {
 		-webkit-text-size-adjust: 100%;
-		color: color(1);
+		color: $text_color;
 
 		* {
 			@include box-sizing(border-box);
@@ -43,9 +47,7 @@
 	#container {
 		position: relative;
 		min-height: 100%;
-		@include sp() {
-			//overflow-x: hidden;
-		}
+		overflow-x: hidden;
 
 		* html & {
 			height: 100%;
@@ -90,11 +92,15 @@
 	}
 
 	.right-nav {
+		@include border-radius(50%);
 		display: none;
 		position: fixed;
 		bottom: 10px;
 		right: 10px;
 		z-index: 1000;
+		width: 60px;
+		height: 60px;
+		background: $main_color;
 
 		a {
 			@include transition(opacity $mouseover linear);
@@ -106,6 +112,8 @@
 		}
 
 		img {
+			width: 60px;
+			height: 60px;
 			@include sp() {
 				width: 45px;
 				height: 45px;
@@ -123,7 +131,154 @@
 
 @mixin layout-header {
 	.header {
-		position: relative;
+		&__upper {
+			position: relative;
+			background: $main_color;
+		}
+
+		&__title {
+			padding: 21px 0 21px 35px;
+			color: #FFF;
+			font-size: 28px;
+			font-weight: bold;
+
+			small {
+				display: block;
+				margin-bottom: 14px;
+				font-size: 16px;
+				font-weight: normal;
+			}
+		}
+
+		&__link {
+			display: flex;
+			position: absolute;
+			right: 37px;
+			bottom: 0;
+
+			&__item {
+				a {
+					display: block;
+					position: relative;
+
+					&:before {
+						content: "";
+						position: absolute;
+					}
+
+					&:hover {
+						@include opacity(1);
+						text-decoration: underline;
+					}
+
+					&.-en {
+						padding: 15px 17px 15px 0;
+						color: #FFF;
+						font-size: 18px;
+
+						&:before {
+							@include border-radius(50%);
+							display: flex;
+							align-items: center;
+							left: -20px;
+							top: 18px;
+							width: 16px;
+							height: 16px;
+							background: #FFF;
+						}
+
+						&:after {
+							@include rotate(45deg);
+							display: inline-block;
+							content: "";
+							position: absolute;
+							left: -16px;
+							top: 23px;
+							width: 4px;
+							height: 4px;
+							border-top: 2px solid $main_color;
+							border-right: 2px solid $main_color;
+						}
+					}
+
+					&.-contact {
+						@include border-radius(14px 14px 0 0);
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						position: relative;
+						width: 180px;
+						height: 100%;
+						padding-left: 15px;
+						background: #FFF;
+						color: $main_color;
+						font-size: 16px;
+						font-weight: bold;
+
+						&:before {
+							display: flex;
+							align-items: center;
+							position: absolute;
+							left: 23px;
+							top: 3px;
+							bottom: 0;
+							content: "\f0e0";
+							color: $main_color;
+							font-family: "Font Awesome 5 Free";
+							font-size: 20px;
+							font-weight: normal;
+						}
+					}
+				}
+			}
+		}
+
+		&__lower {
+			height: 80px;
+		}
+
+		&__nav {
+			&__list {
+				display: flex;
+				justify-content: space-between;
+				width: 1000px;
+				margin: auto;
+			}
+
+			&__item {
+				width: 100%;
+				border-right: 1px solid #B4B4B5;
+
+				&:first-child {
+					border-left: 1px solid #B4B4B5;
+				}
+
+				&:hover {
+					a {
+						@include opacity(1);
+						background: rgba($main_color, .6);
+						color: #FFF;
+					}
+				}
+
+				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 80px;
+					color: $text_color;
+					font-size: 16px;
+					font-weight: bold;
+				}
+
+				&.-is-active {
+					a {
+						background: rgba($main_color, .6);
+						color: #FFF;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -145,12 +300,65 @@
 
 }
 
-@mixin layout-sub {
-	.side {
-	}
-}
-
 @mixin layout-footer {
 	.footer {
+		background: #082B5E;
+		color: #FFF;
+
+		&__inner {
+			width: 1000px;
+			margin: auto;
+			padding: 35px 0;
+		}
+
+		&__upper {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #FFF;
+		}
+
+		&__title {
+			font-size: 24px;
+			font-weight: bold;
+
+			small {
+				display: block;
+				margin-bottom: 15px;
+				font-size: 15px;
+				font-weight: normal;
+			}
+		}
+
+		&__sns {
+			display: flex;
+
+			&__item {
+				&:not(:first-child) {
+					margin-left: 18px;
+				}
+			}
+		}
+
+		&__lower {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__address {
+			font-size: 14px;
+			line-height: (24/14);
+		}
+
+		&__logo {
+			display: flex;
+
+			&__item {
+				&:not(:first-child) {
+					margin-left: 28px;
+				}
+			}
+		}
 	}
 }

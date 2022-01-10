@@ -12,8 +12,9 @@ $browser-minimum-versions: ("firefox": "33", "ie": "9");
 $mouseover:.15s;
 
 //①メインカラー、②テキスト
-$color:#444 #000;
-
+$main_color: #005BAC;
+$text_color: #2F302F;
+$font_noto:'Noto Sans JP', sans-serif;
 $font_goth:"メイリオ" , Meiryo , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "ＭＳ Ｐゴシック" , "MS PGothic", arial, helvetica, sans-serif;
 $font_goth_old:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","ＭＳ Ｐゴシック",sans-serif;
 $font_min:"Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
