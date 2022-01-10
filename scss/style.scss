@@ -96,6 +96,8 @@ File Name: style.scss
 }
 
 .link-more {
+	position: relative;
+	z-index: 1;
 	width: 280px;
 	margin: auto;
 
@@ -231,6 +233,7 @@ File Name: style.scss
 }
 
 .publications {
+	padding-bottom: 0;
 	background: url("../img/publications_bg.png") center center no-repeat $main_color;
 	@include background-size(cover);
 
@@ -239,7 +242,14 @@ File Name: style.scss
 		color: #FFF;
 	}
 
+	&__inner {
+		position: relative;
+		padding-bottom: 90px;
+	}
+
 	&__list {
+		position: relative;
+		z-index: 1;
 		margin-bottom: 50px;
 		padding: 35px 50px;
 		background: #FFF;
@@ -270,6 +280,12 @@ File Name: style.scss
 				font-size: 13px;
 			}
 		}
+	}
+
+	&__pic {
+		position: absolute;
+		left: -150px;
+		bottom: 0;
 	}
 }
 
@@ -393,7 +409,13 @@ File Name: style.scss
 		}
 	}
 
+	&__inner {
+		position: relative;
+	}
+
 	&__text {
+		position: relative;
+		z-index: 1;
 		margin-bottom: 40px;
 		color: #FFF;
 		font-size: 16px;
@@ -409,6 +431,8 @@ File Name: style.scss
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
+		position: relative;
+		z-index: 1;
 		margin-top: -20px;
 	}
 
@@ -453,5 +477,11 @@ File Name: style.scss
 				border-right: 2px solid #FFF;
 			}
 		}
+	}
+
+	&__pic {
+		position: absolute;
+		right: -340px;
+		top: -220px;
 	}
 }

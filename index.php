@@ -48,16 +48,18 @@
 <section class="publications box">
 <h2 class="publications__title box__title">論文・出版物<span class="box__title__icon -publications"><img src="<?php echo $base_url . '/'; ?>img/publications_title_icon.png" alt="論文・出版物"></span></h2>
 
-<div class="box__inner">
+<div class="publications__inner box__inner">
 <ul class="publications__list">
 <li class="publications__item">Ironside, M+., Amemori, K+., McGrath, C. L., Pedersen, L. M., Kang, M. S., Amemori, S., Frank, M. J., Graybiel, A. M. and Pizzagalli, D. A. Approach-avoidance conflict in major depression: Congruent neural findings in human and non-human primates. Biological Psychiatry, 87 (2020): 399-408. (+: equal contribution)<span class="publications__item__link"><a href="#" target="_blank" rel="noopener">DOI</a></span><span class="publications__item__link"><a href="#" target="_blank" rel="noopener">PUBMED</a></span></li>
 <li class="publications__item">Amemori, S., Amemori, K., Yoshida, T., Papageorgiou, G. K., Xu, R., Shimazu, H., Desimone, R. and Graybiel, A. M. Microstimulation of primate neocortex targeting striosomes induces negative decision-making. European Journal of Neuroscience, 51 (2020): 731-741.<span class="publications__item__link"><a href="#" target="_blank" rel="noopener">DOI</a></span></li>
 <li class="publications__item">Amemori, K., Amemori, S., Gibson, D. J., and Graybiel, A. M. Striatal beta oscillation and neuronal activity in the primate caudate nucleus differentially represent valence and arousal under approach-avoidance conflict. Frontiers in Neuroscience, 14 (2020): 89.<span class="publications__item__link"><a href="#" target="_blank" rel="noopener">DOI</a></span></li>
 </ul>
-</div>
 
 <p class="link-more"><a href="/publications/" class="-publications">View All Publications</a></p>
 
+<p class="publications__pic"><img src="<?php echo $base_url . '/'; ?>img/publications_pic.png" alt=""></p>
+
+</div>
 </section>
 
 
@@ -110,7 +112,7 @@ NHK BS1「□□□□□□□□□□」に雨森 賢一PIが出演しまし�
 <section class="recruit">
 <h2 class="recruit__title"><span class="recruit__title__icon"><img src="<?php echo $base_url . '/'; ?>img/recruit_title_icon.png" alt="採用情報"></span>採用情報</h2>
 
-<div class="box__inner">
+<div class="recruit__inner box__inner">
 <p class="recruit__text">当研究グループでは、研究スタッフ、大学院生（博士課程、修士課程）を募集しています。<br>
 興味のある方は「<a href="/contact/">Contact</a>」よりご連絡ください。<br>
 募集要項などの情報は、以下のリンク先をご覧ください。</p>
@@ -120,6 +122,9 @@ NHK BS1「□□□□□□□□□□」に雨森 賢一PIが出演しまし�
 <li class="recruit__item"><a href="#">京都大学大学院医学研究科 入試募集要項</a></li>
 <li class="recruit__item"><a href="#">技術補佐員（1名）</a></li>
 </ul>
+
+<p class="recruit__pic"><img src="<?php echo $base_url . '/'; ?>img/recruit_pic.png" alt=""></p>
+
 </div>
 </section>
 
