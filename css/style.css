@@ -421,6 +421,9 @@ body > #container {
   right: 37px;
   bottom: 0;
 }
+.header__link__item:first-child {
+  margin-right: 15px;
+}
 .header__link__item a {
   display: block;
   position: relative;
@@ -437,7 +440,7 @@ body > #container {
 .header__link__item a.-en {
   padding: 15px 17px 15px 0;
   color: #FFF;
-  font-size: 18px;
+  font-size: 14px;
 }
 .header__link__item a.-en:before {
   -moz-border-radius: 50%;
@@ -446,9 +449,9 @@ body > #container {
   display: flex;
   align-items: center;
   left: -20px;
-  top: 18px;
-  width: 16px;
-  height: 16px;
+  top: 16px;
+  width: 14px;
+  height: 14px;
   background: #FFF;
 }
 .header__link__item a.-en:after {
@@ -460,9 +463,9 @@ body > #container {
   content: "";
   position: absolute;
   left: -16px;
-  top: 23px;
-  width: 4px;
-  height: 4px;
+  top: 20px;
+  width: 3px;
+  height: 3px;
   border-top: 2px solid #005BAC;
   border-right: 2px solid #005BAC;
 }

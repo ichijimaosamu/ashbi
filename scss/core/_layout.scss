@@ -157,6 +157,10 @@
 			bottom: 0;
 
 			&__item {
+				&:first-child {
+					margin-right: 15px;
+				}
+
 				a {
 					display: block;
 					position: relative;
@@ -174,16 +178,16 @@
 					&.-en {
 						padding: 15px 17px 15px 0;
 						color: #FFF;
-						font-size: 18px;
+						font-size: 14px;
 
 						&:before {
 							@include border-radius(50%);
 							display: flex;
 							align-items: center;
 							left: -20px;
-							top: 18px;
-							width: 16px;
-							height: 16px;
+							top: 16px;
+							width: 14px;
+							height: 14px;
 							background: #FFF;
 						}
 
@@ -193,9 +197,9 @@
 							content: "";
 							position: absolute;
 							left: -16px;
-							top: 23px;
-							width: 4px;
-							height: 4px;
+							top: 20px;
+							width: 3px;
+							height: 3px;
 							border-top: 2px solid $main_color;
 							border-right: 2px solid $main_color;
 						}
