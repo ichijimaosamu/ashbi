@@ -272,23 +272,23 @@ body > #container {
 }
 
 .right-nav {
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   display: none;
   position: fixed;
   bottom: 10px;
   right: 10px;
   z-index: 1000;
-  width: 60px;
-  height: 60px;
-  background: #005BAC;
 }
 .right-nav a {
   -moz-transition: opacity 0.15s linear;
   -webkit-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
   display: block;
+  width: 60px;
+  height: 60px;
+  background: #005BAC;
 }
 .right-nav a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -647,10 +647,11 @@ body > #container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 820px;
   margin-bottom: 50px;
 }
 .research__text {
-  width: 460px;
+  width: 470px;
   font-size: 16px;
   line-height: 2.125;
 }

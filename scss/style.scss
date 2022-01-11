@@ -222,11 +222,12 @@ File Name: style.scss
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		width: 820px;
 		margin-bottom: 50px;
 	}
 
 	&__text {
-		width: 460px;
+		width: 470px;
 		font-size: 16px;
 		line-height: (34/16);
 	}
