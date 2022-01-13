@@ -1,4 +1,16 @@
 @charset "UTF-8";
+/*
+Theme Name: Lightning Child
+Theme URI:
+Template: lightning
+Description:
+Author:
+Tags:
+Version: 0.0.1
+
+header var(--vk-color-custom-1);
+footer var(--vk-color-custom-2);
+*/
 /*----------------------------------------------------------------------
 ------------------------------------------------------------------------
 
@@ -421,12 +433,16 @@ body > #container {
   right: 37px;
   bottom: 0;
 }
+.header__link__item {
+  margin-bottom: 0;
+}
 .header__link__item:first-child {
   margin-right: 15px;
 }
 .header__link__item a {
   display: block;
   position: relative;
+  text-decoration: none;
 }
 .header__link__item a:before {
   content: "";
@@ -459,6 +475,7 @@ body > #container {
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  box-sizing: initial;
   display: inline-block;
   content: "";
   position: absolute;
@@ -595,7 +612,7 @@ body > #container {
 ----------------------------------------------------------------------*/
 .main__fv {
   height: 600px;
-  background: url("../img/main_fv_bg.jpg") center center no-repeat;
+  background: url("img/main_fv_bg.jpg") center center no-repeat;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
@@ -658,7 +675,7 @@ body > #container {
 
 .publications {
   padding-bottom: 0;
-  background: url("../img/publications_bg.png") center center no-repeat #005BAC;
+  background: url("img/publications_bg.png") center center no-repeat #005BAC;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
@@ -787,7 +804,7 @@ body > #container {
 
 .recruit {
   padding: 100px 0 150px;
-  background: url("../img/recruit_bg.png") center center no-repeat #005BAC;
+  background: url("img/recruit_bg.png") center center no-repeat #005BAC;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
@@ -888,4 +905,4 @@ body > #container {
   top: -220px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style_local.css.map */

@@ -157,6 +157,8 @@
 			bottom: 0;
 
 			&__item {
+				margin-bottom: 0;
+
 				&:first-child {
 					margin-right: 15px;
 				}
@@ -164,6 +166,7 @@
 				a {
 					display: block;
 					position: relative;
+					text-decoration: none;
 
 					&:before {
 						content: "";
@@ -193,6 +196,7 @@
 
 						&:after {
 							@include rotate(45deg);
+							box-sizing: initial;
 							display: inline-block;
 							content: "";
 							position: absolute;
