@@ -183,9 +183,8 @@ File Name: style.scss
 
 .main {
 	&__fv {
+		position: relative;
 		height: 600px;
-		background: url("img/main_fv_bg.jpg") center center no-repeat;
-		@include background-size(cover);
 
 		&__inner {
 			width: 1000px;
@@ -196,11 +195,27 @@ File Name: style.scss
 		&__title {
 			@include box-shadow(3px 3px 0 rgba(#000, .1));
 			display: inline-block;
+			position: relative;
+			z-index: 10;
 			padding: 20px 28px;
 			background: $main_color;
 			color: #FFF;
 			font-size: 26px;
 			font-weight: bold;
+		}
+
+		&__bg {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			text-align: center;
+
+			img {
+				width: 100vw;
+				height: 600px;
+				object-fit: cover;
+			}
 		}
 	}
 }

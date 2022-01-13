@@ -27,6 +27,7 @@
 <div class="main__fv">
 <div class="main__fv__inner">
 <h1 class="main__fv__title">不安と葛藤の神経機構を解明</h1>
+<p class="main__fv__bg"><img src="<?php echo $base_url . '/'; ?>img/main_fv_bg.jpg" alt=""></p>
 </div>
 </div>
 

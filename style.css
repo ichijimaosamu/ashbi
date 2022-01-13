@@ -616,11 +616,8 @@ body > #container {
 10.	ページ別個別設定
 ----------------------------------------------------------------------*/
 .main__fv {
+  position: relative;
   height: 600px;
-  background: url("img/main_fv_bg.jpg") center center no-repeat;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
 }
 .main__fv__inner {
   width: 1000px;
@@ -632,11 +629,25 @@ body > #container {
   -webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
   display: inline-block;
+  position: relative;
+  z-index: 10;
   padding: 20px 28px;
-  background: var(--vk-color-custom-1);
+  background: #005BAC;
   color: #FFF;
   font-size: 26px;
   font-weight: bold;
+}
+.main__fv__bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+}
+.main__fv__bg img {
+  width: 100vw;
+  height: 600px;
+  object-fit: cover;
 }
 
 .research {
