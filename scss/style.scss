@@ -706,4 +706,35 @@ File Name: style.scss
 			}
 		}
 	}
+
+	.publications {
+		&__list {
+			padding: 0;
+		}
+
+		&__item {
+			position: relative;
+			padding-left: 25px;
+			list-style-type: none;
+			counter-increment: number;
+
+			&:before {
+				position: absolute;
+				left: 0;
+				content: counter(number) ".";
+				color: var(--vk-color-custom-1);
+			}
+
+			&:last-child {
+				padding-bottom: 25px;
+				border-bottom: 1px solid #C7C4C3;
+			}
+		}
+
+		&__block {
+			&:not(:last-of-type) {
+				margin-bottom: 100px;
+			}
+		}
+	}
 }

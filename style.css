@@ -1075,5 +1075,27 @@ body > #container {
 .lower .block__content__pic__caption em {
   font-weight: bold;
 }
+.lower .publications__list {
+  padding: 0;
+}
+.lower .publications__item {
+  position: relative;
+  padding-left: 25px;
+  list-style-type: none;
+  counter-increment: number;
+}
+.lower .publications__item:before {
+  position: absolute;
+  left: 0;
+  content: counter(number) ".";
+  color: var(--vk-color-custom-1);
+}
+.lower .publications__item:last-child {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #C7C4C3;
+}
+.lower .publications__block:not(:last-of-type) {
+  margin-bottom: 100px;
+}
 
 /*# sourceMappingURL=style.css.map */
