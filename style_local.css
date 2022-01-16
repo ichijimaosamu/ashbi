@@ -427,7 +427,6 @@ body > #container {
 }
 .chapter__item a {
   position: relative;
-  min-width: 150px;
   padding: 10px 30px 10px 17px;
   background: rgba(0, 91, 172, 0.1);
   color: #005BAC;

@@ -38,12 +38,12 @@
 <li class="breadcrumb-list__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="" itemprop="item"><span itemprop="name">論文・出版物</span></a><meta itemprop="position" content="2"></li>
 </ol>
 
-<ul class="chapter -publications">
-<li class="chapter__item -publications"><a href="#chapter1">2022</a></li>
-<li class="chapter__item -publications"><a href="#chapter2">2021</a></li>
-<li class="chapter__item -publications"><a href="#chapter3">2020</a></li>
-<li class="chapter__item -publications"><a href="#chapter4">2019</a></li>
-<li class="chapter__item -publications"><a href="#chapter5">2018</a></li>
+<ul class="chapter">
+<li class="chapter__item"><a href="#chapter1">2022</a></li>
+<li class="chapter__item"><a href="#chapter2">2021</a></li>
+<li class="chapter__item"><a href="#chapter3">2020</a></li>
+<li class="chapter__item"><a href="#chapter4">2019</a></li>
+<li class="chapter__item"><a href="#chapter5">2018</a></li>
 </ul>
 
 <section id="chapter1" class="publications__block block">
