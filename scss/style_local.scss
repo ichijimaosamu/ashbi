@@ -201,6 +201,48 @@ File Name: style.scss
 	}
 }
 
+.pagenation {
+	display: flex;
+	justify-content: center;
+	margin-top: 90px;
+
+	&__item {
+		@include border-radius(6px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		background: $main_color;
+		font-size: 18px;
+		font-weight: 500;
+
+		&.-prev,
+		&.-next {
+			a {
+				font-size: 14px;
+			}
+		}
+
+		&.-is-active {
+			background: #ddd;
+		}
+
+		&:not(:last-child) {
+			margin-right: 9px;
+		}
+
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			height: 40px;
+			color: #FFF;
+		}
+	}
+}
+
 /*----------------------------------------------------------------------
 6.	#header
 ----------------------------------------------------------------------*/
@@ -426,6 +468,7 @@ File Name: style.scss
 
 	&__list {
 		display: flex;
+		flex-wrap: wrap;
 	}
 
 	&__item {
@@ -709,6 +752,44 @@ File Name: style.scss
 		&__block {
 			&:not(:last-of-type) {
 				margin-bottom: 100px;
+			}
+		}
+	}
+
+	.news {
+		&__list {
+			margin-top: (-100px/3);
+		}
+
+		&__item {
+			width: 200px;
+			margin: (100px/3) (100px/3) 0 0;
+
+			&:not(:first-child) {
+				margin-left: 0;
+			}
+
+			&:nth-child(4n) {
+				margin-right: 0;
+			}
+
+			&__term {
+				padding-top: (130%/200) * 100;
+			}
+
+			&__description {
+				padding: 12px 0 0;
+				font-size: 14px;
+				line-height: (24/14);
+			}
+
+			&__date {
+				margin-bottom: 8px;
+				padding-bottom: 8px;
+			}
+
+			&__text {
+				text-decoration: underline;
 			}
 		}
 	}
