@@ -792,5 +792,88 @@ File Name: style.scss
 				text-decoration: underline;
 			}
 		}
+
+		&__detail {
+			&__title {
+				margin-bottom: 30px;
+				padding: 0px 0 13px 18px;
+				font-size: 26px;
+				font-weight: bold;
+				line-height: (36/26);
+				border-bottom: 1px solid $main_color;
+				border-left: 6px solid $main_color;
+			}
+
+			&__info {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				margin-bottom: 45px;
+			}
+
+			&__date {
+				margin-right: 20px;
+				color: $main_color;
+				font-size: 16px;
+				font-weight: 500;
+			}
+
+			&__cate {
+				display: flex;
+				align-items: center;
+				height: 24px;
+				padding: 0 12px;
+				background: $main_color;
+				color: #FFF;
+				font-size: 14px;
+			}
+
+			&__content {
+				* {
+					&:first-child {
+						margin: 0;
+					}
+				}
+			}
+
+			&__mainpic {
+				text-align: center;
+			}
+
+			&__pic {
+				margin-top: 70px;
+				text-align: center;
+			}
+
+			&__text {
+				margin: 50px 0;
+				font-size: 15px;
+				line-height: (32/15);
+
+				a {
+					color: $text_color;
+					text-decoration: underline;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+
+			&__caption {
+				width: 800px;
+				margin: 30px auto 0;
+				font-size: 13px;
+				line-height: (23/13);
+			}
+
+			&__pagenation {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 100px;
+				padding-top: 40px;
+				border-top: 1px solid #CCC;
+			}
+		}
 	}
 }
