@@ -196,6 +196,7 @@ File Name: style.scss
 			color: var(--vk-color-custom-1);
 			font-size: 14px;
 			font-weight: bold;
+			text-decoration: none;
 
 			&:after {
 				@include box-sizing(initial);
@@ -215,45 +216,50 @@ File Name: style.scss
 	}
 }
 
-.pagenation {
+.wp-pagenavi {
 	display: flex;
 	justify-content: center;
 	margin-top: 90px;
 
-	&__item {
+	> * {
 		@include border-radius(6px);
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 40px;
 		height: 40px;
+		padding: 0;
 		background: var(--vk-color-custom-1);
+		color: #FFF;
 		font-size: 18px;
 		font-weight: 500;
-
-		&.-prev,
-		&.-next {
-			a {
-				font-size: 14px;
-			}
-		}
-
-		&.-is-active {
-			background: #ddd;
-		}
+		border: none !important;
 
 		&:not(:last-child) {
 			margin-right: 9px;
 		}
+	}
 
-		a {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 40px;
-			height: 40px;
+	a {
+		&:hover {
 			color: #FFF;
 		}
+	}
+
+	.previouspostslink,
+	.nextpostslink {
+		padding: 0;
+		font-size: 14px;
+	}
+
+	.current {
+		padding: 0;
+		color: initial;
+		background: #DDD;
+	}
+
+	i {
+		margin: 0;
 	}
 }
 

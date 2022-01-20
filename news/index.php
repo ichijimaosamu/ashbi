@@ -208,15 +208,14 @@
 </a></li>
 </ol>
 
-<ol class="pagenation">
-<li class="pagenation__item -prev"><a href=""><i class="fas fa-angle-double-left"></i></a></li>
-<li class="pagenation__item -is-active">1</li>
-<li class="pagenation__item"><a href="">2</a></li>
-<li class="pagenation__item"><a href="">3</a></li>
-<li class="pagenation__item"><a href="">4</a></li>
-<li class="pagenation__item"><a href="">5</a></li>
-<li class="pagenation__item -next"><a href=""><i class="fas fa-angle-double-right"></i></a></li>
-</ol>
+<div class="wp-pagenavi" role="navigation">
+<a class="previouspostslink" rel="prev" aria-label="Previous Page" href="https://trais-out4.sakura.ne.jp/ashbi_temp/news/"><i class="fas fa-angle-double-left"></i></a>
+<a class="page smaller" title="Page 1" href="https://trais-out4.sakura.ne.jp/ashbi_temp/news/">1</a>
+<span aria-current="page" class="current">2</span>
+<a class="page larger" title="Page 3" href="https://trais-out4.sakura.ne.jp/ashbi_temp/news/page/3/">3</a>
+<a class="page larger" title="Page 4" href="https://trais-out4.sakura.ne.jp/ashbi_temp/news/page/4/">4</a>
+<a class="nextpostslink" rel="next" aria-label="Next Page" href="https://trais-out4.sakura.ne.jp/ashbi_temp/news/page/3/"><i class="fas fa-angle-double-right"></i></a>
+</div>
 
 </div>
 
