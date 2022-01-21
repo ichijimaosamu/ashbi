@@ -4,8 +4,8 @@
 <h1 class="header__title"><small>京都大学高等研究院 ヒト生物学高等研究拠点（WPI-ASHBi）</small>雨森グループ</h1>
 
 <ul class="header__link">
-<li class="header__link__item"><a href="/en/" class="-en">ENGLISH SITE</a></li>
-<li class="header__link__item"><a href="/contact/" class="-contact">お問い合わせ</a></li>
+<li class="header__link__item"><a href="<?php echo $base_url . '/'; ?>en/" class="-en">ENGLISH SITE</a></li>
+<li class="header__link__item"><a href="<?php echo $base_url . '/'; ?>contact/" class="-contact">お問い合わせ</a></li>
 </ul>
 </div>
 
