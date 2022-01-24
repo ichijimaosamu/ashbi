@@ -13,7 +13,7 @@
 <nav class="header__nav">
 <ul class="header__nav__list">
 <li class="header__nav__item<?php if($_SERVER["REQUEST_URI"] == '/' || $_SERVER["REQUEST_URI"] == '/site/ashbi/') {echo ' -is-active'; } ?>"><a href="<?php echo $base_url . '/'; ?>">ホーム</a></li>
-<li class="header__nav__item<?php if(strpos($URI,'/team/') !== false) {echo ' -is-active'; } ?>"><a href="<?php echo $base_url . '/'; ?>team/">メンバー</a></li>
+<li class="header__nav__item<?php if(strpos($URI,'/member/') !== false) {echo ' -is-active'; } ?>"><a href="<?php echo $base_url . '/'; ?>member/">メンバー</a></li>
 <li class="header__nav__item<?php if(strpos($URI,'/research/') !== false) {echo ' -is-active'; } ?>"><a href="<?php echo $base_url . '/'; ?>research/">研究概要</a></li>
 <li class="header__nav__item<?php if(strpos($URI,'/publications/') !== false) {echo ' -is-active'; } ?>"><a href="<?php echo $base_url . '/'; ?>publications/">論文・出版物</a></li>
 <li class="header__nav__item<?php if(strpos($URI,'/news/') !== false) {echo ' -is-active'; } ?>"><a href="<?php echo $base_url . '/'; ?>news/">ニュース</a></li>
