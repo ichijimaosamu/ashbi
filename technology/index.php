@@ -40,7 +40,7 @@
 </ol>
 
 <section class="technology__about block">
-<h2 class="block__title">About our Technology</h2>
+<h2 class="block__title">私たちの技術開発について</h2>
 
 <div class="technology__about__flex">
 <ul class="technology__about__list">
@@ -69,7 +69,7 @@
 </section>
 
 <section class="technology__equipments block">
-<h2 class="block__title">Experimental Equipments</h2>
+<h2 class="block__title">実験装置</h2>
 
 <ul class="photo__list">
 <li class="photo__item"><a href="<?php echo $base_url . '/'; ?>img/photo_item1_b.jpg" data-lightbox="photo" data-title=""><img src="<?php echo $base_url . '/'; ?>img/photo_item1_m.jpg" alt=""></a></li>
