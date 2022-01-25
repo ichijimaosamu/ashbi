@@ -161,7 +161,8 @@ File Name: style.scss
 	&__item {
 		display: inline-block;
 
-		a {
+		a,
+		span {
 			color: #2F302F;
 			font-size: 14px;
 			text-decoration: none;
@@ -326,7 +327,7 @@ File Name: style.scss
 			position: relative;
 			z-index: 10;
 			padding: 20px 28px;
-			background: $main_color;
+			background: var(--vk-color-custom-1);
 			color: #FFF;
 			font-size: 26px;
 			font-weight: bold;
@@ -830,8 +831,8 @@ File Name: style.scss
 				font-size: 26px;
 				font-weight: bold;
 				line-height: (36/26);
-				border-bottom: 1px solid $main_color;
-				border-left: 6px solid $main_color;
+				border-bottom: 1px solid var(--vk-color-custom-1);
+				border-left: 6px solid var(--vk-color-custom-1);
 			}
 
 			&__info {
@@ -842,8 +843,7 @@ File Name: style.scss
 			}
 
 			&__date {
-				margin-right: 20px;
-				color: $main_color;
+				color: var(--vk-color-custom-1);
 				font-size: 16px;
 				font-weight: 500;
 			}
@@ -852,33 +852,26 @@ File Name: style.scss
 				display: flex;
 				align-items: center;
 				height: 24px;
+				margin-left: 20px;
 				padding: 0 12px;
-				background: $main_color;
+				background: var(--vk-color-custom-1);
 				color: #FFF;
 				font-size: 14px;
 			}
 
 			&__content {
-				* {
-					&:first-child {
-						margin: 0;
-					}
-				}
-			}
-
-			&__mainpic {
-				text-align: center;
-			}
-
-			&__pic {
-				margin-top: 70px;
-				text-align: center;
-			}
-
-			&__text {
-				margin: 50px 0;
 				font-size: 15px;
 				line-height: (32/15);
+
+				p {
+					margin: 50px 0;
+					font-size: 15px;
+					line-height: (32/15);
+				}
+
+				> div {
+					margin: auto;
+				}
 
 				a {
 					color: $text_color;
@@ -888,13 +881,14 @@ File Name: style.scss
 						text-decoration: none;
 					}
 				}
-			}
 
-			&__caption {
-				width: 800px;
-				margin: 30px auto 0;
-				font-size: 13px;
-				line-height: (23/13);
+				img {
+					+ p {
+						margin: 30px auto 0;
+						font-size: 13px;
+						line-height: (23/13);
+					}
+				}
 			}
 
 			&__pagenation {

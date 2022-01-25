@@ -403,7 +403,8 @@ body > #container {
 .breadcrumb-list__item {
   display: inline-block;
 }
-.breadcrumb-list__item a {
+.breadcrumb-list__item a,
+.breadcrumb-list__item span {
   color: #2F302F;
   font-size: 14px;
   text-decoration: none;
@@ -1153,7 +1154,6 @@ body > #container {
   margin-bottom: 45px;
 }
 .lower .news__detail__date {
-  margin-right: 20px;
   color: #005BAC;
   font-size: 16px;
   font-weight: 500;
@@ -1162,35 +1162,32 @@ body > #container {
   display: flex;
   align-items: center;
   height: 24px;
+  margin-left: 20px;
   padding: 0 12px;
   background: #005BAC;
   color: #FFF;
   font-size: 14px;
 }
-.lower .news__detail__content *:first-child {
-  margin: 0;
+.lower .news__detail__content {
+  font-size: 15px;
+  line-height: 2.13333;
 }
-.lower .news__detail__mainpic {
-  text-align: center;
-}
-.lower .news__detail__pic {
-  margin-top: 70px;
-  text-align: center;
-}
-.lower .news__detail__text {
+.lower .news__detail__content p {
   margin: 50px 0;
   font-size: 15px;
   line-height: 2.13333;
 }
-.lower .news__detail__text a {
+.lower .news__detail__content > div {
+  margin: auto;
+}
+.lower .news__detail__content a {
   color: #2F302F;
   text-decoration: underline;
 }
-.lower .news__detail__text a:hover {
+.lower .news__detail__content a:hover {
   text-decoration: none;
 }
-.lower .news__detail__caption {
-  width: 800px;
+.lower .news__detail__content img + p {
   margin: 30px auto 0;
   font-size: 13px;
   line-height: 1.76923;
