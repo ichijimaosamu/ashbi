@@ -42,7 +42,6 @@
 <section class="technology__about block">
 <h2 class="block__title">私たちの技術開発について</h2>
 
-<div class="technology__about__flex">
 <ul class="technology__about__list">
 <li class="technology__about__item">
 <dl>
@@ -65,7 +64,7 @@
 </ul>
 
 <p class="technology__about__pic"><img src="<?php echo $base_url . '/'; ?>img/technology_about_pic.jpg" alt=""></p>
-</div>
+
 </section>
 
 <section class="technology__equipments block">
