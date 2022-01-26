@@ -32,7 +32,7 @@
 </div>
 </div>
 
-<div class="main__inner">
+<div class="main__inner -technology">
 
 <ol class="breadcrumb-list" itemscope="" itemtype="https://schema.org/BreadcrumbList">
 <li class="breadcrumb-list__item breadcrumb-list__item--home" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="" itemprop="item"><i class="fas fa-fw fa-home"></i><span itemprop="name">HOME</span></a><meta itemprop="position" content="1"></li>
