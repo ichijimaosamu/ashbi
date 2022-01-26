@@ -42,26 +42,20 @@
 <section class="technology__about block">
 <h2 class="block__title">私たちの技術開発について</h2>
 
-<ul class="technology__about__list">
-<li class="technology__about__item">
-<dl>
-<dt class="technology__about__item__term">タンパク質解析前処理</dt>
-<dd class="technology__about__item__description">培養した細胞や組織からタンパク質を抽出し、主に酵素を用いてタンパク質を消化します（タンパク質をペプチドにします）。</dd>
-</dl>
-</li>
-<li class="technology__about__item">
-<dl>
-<dt class="technology__about__item__term">消化したタンパク質の測定</dt>
-<dd class="technology__about__item__description">液体クロマトグラフィーで消化したタンパク質を分離しながら、質量分析計で測定します。この時、エレクトロスプレイイオン化法と呼ばれる手法を用いてペプチドをイオン化しています。この手法の開発者のジョン・フェン博士は2002年にノーベル化学賞を受賞されました。</dd>
-</dl>
-</li>
-<li class="technology__about__item">
-<dl>
-<dt class="technology__about__item__term">タンパク質の解析と検証</dt>
-<dd class="technology__about__item__description">質量分析計でとったデータをもとに、MascotやProteinPilotなどのデータベース解析ソフトを用いてタンパク質を同定します。この時、定量精度を高めたり、より良い解析結果を得るために、様々な解析ツールを使用・開発します。さらに、ウェスタンブロッティングや免疫染色などを行ってデータの検証をします。</dd>
-</dl>
-</li>
-</ul>
+<div class="technology__about__box">
+<p class="technology__about__box__title">タンパク質解析前処理</p>
+<p class="technology__about__box__text">培養した細胞や組織からタンパク質を抽出し、主に酵素を用いてタンパク質を消化します（タンパク質をペプチドにします）。</p>
+</div>
+
+<div class="technology__about__box">
+<p class="technology__about__box__title">消化したタンパク質の測定</p>
+<p class="technology__about__box__text">液体クロマトグラフィーで消化したタンパク質を分離しながら、質量分析計で測定します。この時、エレクトロスプレイイオン化法と呼ばれる手法を用いてペプチドをイオン化しています。この手法の開発者のジョン・フェン博士は2002年にノーベル化学賞を受賞されました。</p>
+</div>
+
+<div class="technology__about__box">
+<p class="technology__about__box__title">タンパク質の解析と検証</p>
+<p class="technology__about__box__text">質量分析計でとったデータをもとに、MascotやProteinPilotなどのデータベース解析ソフトを用いてタンパク質を同定します。この時、定量精度を高めたり、より良い解析結果を得るために、様々な解析ツールを使用・開発します。さらに、ウェスタンブロッティングや免疫染色などを行ってデータの検証をします。</p>
+</div>
 
 <p class="technology__about__pic"><img src="<?php echo $base_url . '/'; ?>img/technology_about_pic.jpg" alt=""></p>
 
