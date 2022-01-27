@@ -104,7 +104,7 @@
 			display: block;
 			width: 60px;
 			height: 60px;
-			background: var(--vk-color-custom-1);
+			background: $main_color;
 
 			&:hover {
 				@include opacity(.7);
@@ -133,7 +133,7 @@
 	.header {
 		&__upper {
 			position: relative;
-			background: var(--vk-color-custom-1);
+			background: $main_color;
 		}
 
 		&__title {
@@ -216,8 +216,8 @@
 							top: 20px;
 							width: 3px;
 							height: 3px;
-							border-top: 2px solid var(--vk-color-custom-1);
-							border-right: 2px solid var(--vk-color-custom-1);
+							border-top: 2px solid $main_color;
+							border-right: 2px solid $main_color;
 						}
 					}
 
@@ -231,7 +231,7 @@
 						height: 100%;
 						padding-left: 15px;
 						background: #FFF;
-						color: var(--vk-color-custom-1);
+						color: $main_color;
 						font-size: 16px;
 						font-weight: bold;
 
@@ -243,7 +243,7 @@
 							top: 3px;
 							bottom: 0;
 							content: "\f0e0";
-							color: var(--vk-color-custom-1);
+							color: $main_color;
 							font-family: "Font Awesome 5 Free";
 							font-size: 20px;
 							font-weight: normal;
