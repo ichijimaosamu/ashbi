@@ -109,7 +109,7 @@
 	}
 
 	img {
-		border:none;
+		border:none !important;
 		vertical-align:bottom;
 		@include sp() {
 			width: 100%;
@@ -132,6 +132,10 @@
 
 	textarea {
 		vertical-align:top;
+	}
+
+	strong {
+		font-weight: bold;
 	}
 
 	//以下未定義要素
