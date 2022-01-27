@@ -1,7 +1,7 @@
 <?php $URI = $_SERVER["REQUEST_URI"]; ?>
 <header class="header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 <div class="header__upper">
-<h1 class="header__title"><small>京都大学高等研究院 ヒト生物学高等研究拠点（WPI-ASHBi）</small>雨森グループ</h1>
+<h1 class="header__title"><a href="<?php echo $base_url . '/'; ?>"><small>京都大学高等研究院 ヒト生物学高等研究拠点（WPI-ASHBi）</small>雨森グループ</a></h1>
 
 <ul class="header__link">
 <li class="header__link__item"><a href="<?php echo $base_url . '/'; ?>en/" class="-en">ENGLISH SITE</a></li>
