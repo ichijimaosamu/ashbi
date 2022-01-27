@@ -57,9 +57,9 @@
 </div>
 
 <ul class="news__detail__pagenation">
-<li class="news__detail__pagenation__item -prev"><a href=""><span><i class="fas fa-angle-double-left"></i></span>BACK</a></li>
+<li class="news__detail__pagenation__item -prev"><a href=""><i class="fas fa-angle-double-left"></i>BACK</a></li>
 <li class="news__detail__pagenation__item -list"><a href="">一覧へ戻る</a></li>
-<li class="news__detail__pagenation__item -next"><a href="">NEXT<span><i class="fas fa-angle-double-right"></i></span></a></li>
+<li class="news__detail__pagenation__item -next"><a href="">NEXT<i class="fas fa-angle-double-right"></i></a></li>
 </ul>
 
 </section>
