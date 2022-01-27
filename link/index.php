@@ -39,16 +39,16 @@
 </ol>
 
 <ul class="link__list">
-<li class="link__item"><a href="" target="_blank" rel="noopener">京都大学大学院医学研究科・医学部</a></li>
-<li class="link__item"><a href="" target="_blank" rel="noopener">京都大学高等研究院ヒト生物学高等研究拠点</a></li>
-<li class="link__item"><a href="" target="_blank" rel="noopener">京都大学大学院医学研究科・脳機能総合研究センター</a></li>
-<li class="link__item"><a href="" target="_blank" rel="noopener">日本神経科学学会</a></li>
-<li class="link__item"><a href="" target="_blank" rel="noopener">日本生理学会</a></li>
-<li class="link__item"><a href="" target="_blank" rel="noopener">日本脳科学関連学会連合</a></li>
-<li class="link__item"><a href="" target="_blank" rel="noopener">北米神経科学会</a></li>
-<li class="link__item"><a href="" target="_blank" rel="noopener">Society for the Neural Control of Movement</a></li>
-<li class="link__item"><a href="" target="_blank" rel="noopener">日本マーモセット研究会</a></li>
-<li class="link__item"><a href="" target="_blank" rel="noopener">脳科学研究戦略推進プログラム（脳プロ）</a></li>
+<li class="link__item"><a href="" target="_blank" rel="noopener"><span>京都大学大学院医学研究科・医学部</span></a></li>
+<li class="link__item"><a href="" target="_blank" rel="noopener"><span>京都大学高等研究院ヒト生物学高等研究拠点</span></a></li>
+<li class="link__item"><span>京都大学大学院医学研究科・脳機能総合研究センター</span></li>
+<li class="link__item"><span>日本神経科学学会</span></li>
+<li class="link__item"><span>日本生理学会</span></li>
+<li class="link__item"><span>日本脳科学関連学会連合</span></li>
+<li class="link__item"><span>北米神経科学会</span></li>
+<li class="link__item"><span>Societythe Neural Control of Movement</span></li>
+<li class="link__item"><span>日本マーモセット研究会</span></li>
+<li class="link__item"><span>脳科学研究戦略推進プログラム（脳プロ）</span></li>
 </ul>
 
 </div>
