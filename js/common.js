@@ -97,6 +97,25 @@ $(function() {
 			rightNav.fadeOut();
 		}
 	});
+
+	var $win = $(window);
+
+	$win.on('load resize', function() {
+		var windowWidth = $win.width();
+
+		if (windowWidth <= 768) {
+			var headerHeight = $(".header").outerHeight();
+			var fvHeight = $(".main__fv__bg").outerHeight();
+
+			$("#content").css({
+				paddingTop: headerHeight
+			});
+
+			$(".main__fv__inner").css({
+				height: fvHeight
+			});
+		}
+	});
 });
 
 $(function(){

@@ -105,6 +105,10 @@
 			width: 60px;
 			height: 60px;
 			background: $main_color;
+			@include sp() {
+				width: 40px;
+				height: 40px;
+			}
 
 			&:hover {
 				@include opacity(.7);
@@ -115,8 +119,8 @@
 			width: 60px;
 			height: 60px;
 			@include sp() {
-				width: 45px;
-				height: 45px;
+				width: 40px;
+				height: 40px;
 			}
 		}
 	}
@@ -131,6 +135,15 @@
 
 @mixin layout-header {
 	.header {
+		@include sp() {
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			z-index: 30000;
+			width: 100%;
+		}
+
 		&__upper {
 			position: relative;
 			background: $main_color;
@@ -141,6 +154,10 @@
 			color: #FFF;
 			font-size: 28px;
 			font-weight: bold;
+			@include sp() {
+				padding: 4% 14% 4% 4%;
+				@include fz_vw(22);
+			}
 
 			a {
 				color: #FFF;
@@ -159,6 +176,10 @@
 				margin-bottom: 14px;
 				font-size: 16px;
 				font-weight: normal;
+				@include sp() {
+					margin-bottom: 2%;
+					@include fz_vw(11);
+				}
 			}
 		}
 
@@ -167,6 +188,9 @@
 			position: absolute;
 			right: 37px;
 			bottom: 0;
+			@include sp() {
+				display: none;
+			}
 
 			&__item {
 				margin-bottom: 0;
@@ -255,6 +279,9 @@
 
 		&__lower {
 			height: 80px;
+			@include sp() {
+				display: none;
+			}
 		}
 
 		&__nav {
@@ -329,6 +356,10 @@
 			width: 1000px;
 			margin: auto;
 			padding: 35px 0;
+			@include sp() {
+				width: 92%;
+				padding: 10% 0;
+			}
 		}
 
 		&__upper {
@@ -337,17 +368,30 @@
 			margin-bottom: 20px;
 			padding-bottom: 20px;
 			border-bottom: 1px solid #FFF;
+			@include sp() {
+				display: block;
+				margin-bottom: 5%;
+				padding-bottom: 5%;
+			}
 		}
 
 		&__title {
 			font-size: 24px;
 			font-weight: bold;
+			@include sp() {
+				margin-bottom: 4%;
+				@include fz_vw(22);
+			}
 
 			small {
 				display: block;
 				margin-bottom: 15px;
 				font-size: 15px;
 				font-weight: normal;
+				@include sp() {
+					margin-bottom: 8px;
+					@include fz_vw(11);
+				}
 			}
 		}
 
@@ -357,6 +401,16 @@
 			&__item {
 				&:not(:first-child) {
 					margin-left: 18px;
+					@include sp() {
+						margin-left: 4%;
+					}
+				}
+
+				img {
+					@include sp() {
+						width: 30px;
+						height: 30px;
+					}
 				}
 			}
 		}
@@ -364,19 +418,32 @@
 		&__lower {
 			display: flex;
 			justify-content: space-between;
+			@include sp() {
+				display: block;
+			}
 		}
 
 		&__address {
 			font-size: 14px;
 			line-height: (24/14);
+			@include sp() {
+				margin-bottom: 4%;
+				@include fz_vw(13);
+			}
 		}
 
 		&__logo {
 			display: flex;
+			@include sp() {
+				width: 70%;
+			}
 
 			&__item {
 				&:not(:first-child) {
 					margin-left: 28px;
+					@include sp() {
+						margin-left: 8%;
+					}
 				}
 			}
 		}

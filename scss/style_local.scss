@@ -59,13 +59,20 @@ File Name: style.scss
 
 .box {
 	padding: 120px 0 90px;
+	@include sp() {
+		padding: 10% 0;
+	}
 
 	&__title {
 		position: relative;
 		color: $main_color;
 		font-size: 38px;
 		font-weight: bold;
+		border: none;
 		text-align: center;
+		@include sp() {
+			@include fz_vw(24);
+		}
 
 		&__icon {
 			@include border-radius(50%);
@@ -77,6 +84,11 @@ File Name: style.scss
 			height: 80px;
 			margin: auto;
 			background: $main_color;
+			@include sp() {
+				top: 35px;
+				width: 40px;
+				height: 40px;
+			}
 
 			&.-publications {
 				background: #FFF;
@@ -85,6 +97,10 @@ File Name: style.scss
 			img {
 				width: 80px;
 				height: 80px;
+				@include sp() {
+					width: 40px;
+					height: 40px;
+				}
 			}
 		}
 	}
@@ -92,6 +108,9 @@ File Name: style.scss
 	&__inner {
 		width: 1000px;
 		margin: auto;
+		@include sp() {
+			width: 92%;
+		}
 	}
 }
 
@@ -100,6 +119,9 @@ File Name: style.scss
 	z-index: 1;
 	width: 280px;
 	margin: auto;
+	@include sp() {
+		width: 90%;
+	}
 
 	a {
 		@include border-radius(25px);
@@ -241,20 +263,36 @@ File Name: style.scss
 	&__fv {
 		position: relative;
 		height: 600px;
+		@include sp() {
+			height: auto;
+		}
 
 		&.-lower {
 			display: flex;
 			align-items: center;
 			height: 300px;
+			@include sp() {
+				display: block;
+			}
 		}
 
 		&__inner {
 			width: 1000px;
 			margin: auto;
 			padding-top: 445px;
+			@include sp() {
+				display: flex;
+				align-items: center;
+				width: auto;
+				padding-top: 0;
+			}
 
 			&.-lower {
 				padding-top: 0;
+				@include sp() {
+					justify-content: flex-start;
+					padding: 0 0 0 8%;
+				}
 			}
 		}
 
@@ -268,6 +306,11 @@ File Name: style.scss
 			color: #FFF;
 			font-size: 26px;
 			font-weight: bold;
+			@include sp() {
+				margin: 40% 20% 0 0;
+				padding: 4%;
+				@include fz_vw(16);
+			}
 
 			&.-lower {
 				@include text-shadow(0 0 5px rgba(#000, .75));
@@ -286,10 +329,12 @@ File Name: style.scss
 			text-align: center;
 
 			img {
-				width: 100vw;
+				width: 100%;
 				height: 600px;
 				object-fit: cover;
-
+				@include sp() {
+					height: auto;
+				}
 			}
 
 			&.-lower {
@@ -317,6 +362,9 @@ File Name: style.scss
 	&__title {
 		position: relative;
 		padding-bottom: 170px;
+		@include sp() {
+			padding-bottom: 80px;
+		}
 
 		&:before {
 			@include rotate(180deg);
@@ -329,12 +377,18 @@ File Name: style.scss
 			border-style: solid;
 			border-width: 0 0 200px 100vw;
 			border-color: transparent transparent  transparent rgba($main_color, .05);
+			@include sp() {
+				border-width: 0 0 100px 100vw;
+			}
 		}
 	}
 
 	&__bg {
 		padding-bottom: 90px;
 		background: rgba($main_color, .05);
+		@include sp() {
+			padding: 3% 0 15%;
+		}
 	}
 
 	&__inner {
@@ -343,12 +397,23 @@ File Name: style.scss
 		align-items: center;
 		width: 820px;
 		margin-bottom: 50px;
+		@include sp() {
+			display: block;
+			width: auto;
+			margin: 0 4% 7%;
+		}
 	}
 
 	&__text {
 		width: 470px;
 		font-size: 16px;
 		line-height: (34/16);
+		@include sp() {
+			width: auto;
+			margin-bottom: 5%;
+			@include fz_vw(14);
+			line-height: (26/14);
+		}
 	}
 }
 
@@ -360,11 +425,17 @@ File Name: style.scss
 	&__title {
 		margin-bottom: 140px;
 		color: #FFF;
+		@include sp() {
+			margin-bottom: 80px;
+		}
 	}
 
 	&__inner {
 		position: relative;
 		padding-bottom: 90px;
+		@include sp() {
+			padding-bottom: 15%;
+		}
 	}
 
 	&__list {
@@ -373,18 +444,31 @@ File Name: style.scss
 		margin-bottom: 50px;
 		padding: 35px 50px;
 		background: #FFF;
+		@include sp() {
+			margin-bottom: 30px;
+			padding: 3% 4%;
+		}
 	}
 
 	&__item {
 		font-size: 13px;
 		line-height: (24/13);
+		@include sp() {
+			@include fz_vw(13);
+		}
 
 		&:not(:first-child) {
 			padding-top: 25px;
+			@include sp() {
+				padding-top: 3%;
+			}
 		}
 		&:not(:last-child) {
 			padding-bottom: 25px;
 			border-bottom: 1px solid #C7C4C3;
+			@include sp() {
+				padding-bottom: 3%;
+			}
 		}
 
 		&__link {
@@ -399,6 +483,9 @@ File Name: style.scss
 				color: #FFF;
 				font-size: 13px;
 				text-decoration: none;
+				@include sp() {
+					@include fz_vw(13);
+				}
 			}
 		}
 	}
@@ -407,6 +494,9 @@ File Name: style.scss
 		position: absolute;
 		left: -150px;
 		bottom: 0;
+		@include sp() {
+			display: none;
+		}
 	}
 }
 
@@ -415,6 +505,9 @@ File Name: style.scss
 
 	&__title {
 		padding-bottom: 170px;
+		@include sp() {
+			padding-bottom: 80px;
+		}
 
 		&:before {
 			content:"";
@@ -426,29 +519,47 @@ File Name: style.scss
 			border-style: solid;
 			border-width: 200px 0 0 100vw;
 			border-color: transparent transparent  transparent rgba($main_color, .05);
+			@include sp() {
+				border-width: 100px 0 0 100vw;
+			}
 		}
 	}
 
 	&__bg {
 		padding: 45px 0 90px;
 		background: rgba($main_color, .05);
+		@include sp() {
+			padding: 3% 0 15%;
+		}
 	}
 
 	&__inner {
 		margin-bottom: 50px;
+		@include sp() {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
+		@include sp() {
+			display: block;
+		}
 	}
 
 	&__item {
 		width: 300px;
 		background: #FFF;
+		@include sp() {
+			width: 100%;
+		}
 
 		&:not(:first-child) {
 			margin-left: 50px;
+			@include sp() {
+				margin: 8% 0 0;
+			}
 		}
 
 		a {
@@ -539,6 +650,9 @@ File Name: style.scss
 	padding: 100px 0 150px;
 	background: url("img/recruit_bg.png") center center no-repeat $main_color;
 	@include background-size(cover);
+	@include sp() {
+		padding: 10% 0;
+	}
 
 	&__title {
 		display: flex;
@@ -548,6 +662,11 @@ File Name: style.scss
 		color: #FFF;
 		font-size: 38px;
 		font-weight: bold;
+		@include sp() {
+			width: 92%;
+			margin: 0 auto 5%;
+			@include fz_vw(24);
+		}
 
 		&__icon {
 			@include border-radius(50%);
@@ -556,10 +675,19 @@ File Name: style.scss
 			height: 80px;
 			margin-right: 20px;
 			background: #FFF;
+			@include sp() {
+				width: 40px;
+				height: 40px;
+				margin-right: 10px;
+			}
 
 			img {
 				width: 80px;
 				height: 80px;
+				@include sp() {
+					width: 40px;
+					height: 40px;
+				}
 			}
 		}
 	}
@@ -575,6 +703,11 @@ File Name: style.scss
 		color: #FFF;
 		font-size: 16px;
 		line-height: (34/16);
+		@include sp() {
+			margin-bottom: 20px;
+			font-size: 14px;
+			line-height: (26/14);
+		}
 
 		a {
 			color: #FFF;
@@ -589,10 +722,23 @@ File Name: style.scss
 		position: relative;
 		z-index: 1;
 		margin-top: -20px;
+		@include sp() {
+			display: block;
+			margin-top: 0;
+		}
 	}
 
 	&__item {
 		margin: 20px 25px 0 0;
+		@include sp() {
+			margin: 0;
+		}
+
+		&:not(:first-child) {
+			@include sp() {
+				margin: 3% 0 0;
+			}
+		}
 
 		a {
 			@include border-radius(6px);
@@ -603,6 +749,10 @@ File Name: style.scss
 			color: $main_color;
 			font-size: 16px;
 			font-weight: bold;
+			@include sp() {
+				@include fz_vw(14);
+				text-decoration: none;
+			}
 
 			&:before,
 			&:after {
@@ -623,6 +773,7 @@ File Name: style.scss
 			}
 
 			&:after {
+				@include box-sizing(content-box);
 				@include rotate(45deg);
 				display: inline-block;
 				right: 18px;
@@ -638,6 +789,9 @@ File Name: style.scss
 		position: absolute;
 		right: -340px;
 		top: -220px;
+		@include sp() {
+			display: none;
+		}
 	}
 }
 
