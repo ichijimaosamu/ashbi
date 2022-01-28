@@ -27,7 +27,7 @@
 <div class="main__fv -lower">
 <div class="main__fv__inner -lower">
 <h1 class="main__fv__title -lower">メンバー</h1>
-<p class="main__fv__bg -lower"><img src="<?php echo $base_url . '/'; ?>img/member_main_fv_bg.jpg" alt=""></p>
+<p class="main__fv__bg -lower"><img src="<?php echo $base_url . '/'; ?>img/member_main_fv_bg.jpg" class="sp_none" alt=""><img src="<?php echo $base_url . '/'; ?>img/member_main_fv_bg_sp.jpg" class="pc_none" alt=""></p>
 </div>
 </div>
 

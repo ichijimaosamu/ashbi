@@ -165,6 +165,9 @@ File Name: style.scss
 .breadcrumb-list {
 	margin-bottom: 80px;
 	padding: 0;
+	@include sp() {
+		display: none;
+	}
 
 	&__item {
 		display: inline-block;
@@ -194,9 +197,16 @@ File Name: style.scss
 .chapter {
 	display: flex;
 	margin: -15px 0 75px;
+	@include sp() {
+		flex-wrap: wrap;
+		margin: -5% 4% 10%;
+	}
 
 	&__item {
 		margin: 15px 20px 0 0;
+		@include sp() {
+			margin: 8% 3% 0 0;
+		}
 
 		a {
 			position: relative;
@@ -206,6 +216,10 @@ File Name: style.scss
 			font-size: 14px;
 			font-weight: bold;
 			text-decoration: none;
+			@include sp() {
+				padding: 6px 30px 7px 11px;
+				@include fz_vw(12);
+			}
 
 			&:after {
 				@include box-sizing(initial);
@@ -318,6 +332,10 @@ File Name: style.scss
 				padding: 0;
 				background: none;
 				font-size: 40px;
+				@include sp() {
+					margin: 0;
+					@include fz_vw(28);
+				}
 			}
 		}
 
@@ -349,6 +367,10 @@ File Name: style.scss
 		width: 900px;
 		margin: auto;
 		padding: 15px 0 180px;
+		@include sp() {
+			width: auto;
+			padding: 4% 0 20%;
+		}
 
 		&.-technology {
 			width: 1000px;
@@ -920,6 +942,11 @@ File Name: style.scss
 			color: #FFF;
 			font-size: 22px;
 			border: none;
+			@include sp() {
+				margin-bottom: 5%;
+				padding: 3% 4% 4%;
+				@include fz_vw(16);
+			}
 
 			&:before {
 				content: "";
@@ -937,25 +964,46 @@ File Name: style.scss
 		&__group {
 			&:not(:first-of-type) {
 				margin-top: 120px;
+				@include sp() {
+					margin-top: 10%;
+				}
 			}
 		}
 
 		&__block {
+			@include sp() {
+				padding: 0 4%;
+			}
+
 			&:not(:first-of-type) {
 				margin-top: 100px;
+				@include sp() {
+					margin-top: 10%;
+				}
 			}
 		}
 
 		&__info {
 			display: flex;
 			justify-content: space-between;
+			@include sp() {
+				display: block;
+			}
 
 			&__pic {
 				width: 220px;
+				@include sp() {
+					float: left;
+					width: 30%;
+					margin-right: 4%;
+				}
 			}
 
 			&__description {
 				width: 630px;
+				@include sp() {
+					width: auto;
+				}
 			}
 
 			&__name {
@@ -964,10 +1012,20 @@ File Name: style.scss
 				margin-bottom: 45px;
 				font-size: 34px;
 				font-weight: 600;
+				@include sp() {
+					display: block;
+					margin-bottom: 4%;
+					@include fz_vw(20);
+				}
 
 				.en {
 					margin-left: 40px;
 					font-size: 20px;
+					@include sp() {
+						display: block;
+						margin: 2% 0 0;
+						@include fz_vw(13);
+					}
 				}
 			}
 
@@ -976,11 +1034,20 @@ File Name: style.scss
 				color: $main_color;
 				font-size: 18px;
 				font-weight: 600;
+				@include sp() {
+					margin-bottom: 0;
+					@include fz_vw(14);
+				}
 			}
 
 			&__introduction {
 				font-size: 15px;
 				line-height: (30/15);
+				@include sp() {
+					clear: both;
+					padding-top: 4%;
+					@include fz_vw(13);
+				}
 			}
 		}
 
@@ -988,26 +1055,44 @@ File Name: style.scss
 			margin: 45px 0 20px;
 			padding-bottom: 50px;
 			border-bottom: 1px solid #B5B5B5;
+			@include sp() {
+				margin: 7% 0 5%;
+				padding-bottom: 3%;
+			}
 
 			&__term {
 				margin-bottom: 10px;
 				color: $main_color;
 				font-size: 18px;
 				font-weight: 600;
+				@include sp() {
+					margin-bottom: 2%;
+					@include fz_vw(16);
+				}
 			}
 
 			&__description {
 				font-size: 15px;
 				line-height: (30/15);
+				@include sp() {
+					@include fz_vw(13);
+				}
 			}
 		}
 
 		&__footer {
 			display: flex;
 			justify-content: flex-end;
+			@include sp() {
+				display: block;
+			}
 
 			&__mail,
 			&__website {
+				@include sp() {
+					padding-left: 30px;
+				}
+
 				&:before,
 				&:after {
 					content: "";
@@ -1019,6 +1104,10 @@ File Name: style.scss
 					width: 30px;
 					height: 28px;
 					background: $main_color;
+					@include sp() {
+						width: 24px;
+						height: 22px;
+					}
 				}
 
 				&:after {
@@ -1030,10 +1119,17 @@ File Name: style.scss
 			&__mail {
 				position: relative;
 				font-size: 16px;
+				@include sp() {
+					margin-bottom: 15px;
+					@include fz_vw(14);
+				}
 
 				&:before {
 					left: -40px;
 					top: -3px;
+					@include sp() {
+						left: 0;
+					}
 				}
 
 				&:after {
@@ -1043,22 +1139,36 @@ File Name: style.scss
 					content: "\f0e0";
 					font-size: 15px;
 					font-weight: normal;
+					@include sp() {
+						font-size: 12px;
+						left: 6px;
+						top: 3px;
+					}
 				}
 
 				&__notice {
 					display: block;
 					margin-top: 10px;
 					font-size: 13px;
+					@include sp() {
+						@include fz_vw(11);
+					}
 				}
 			}
 
 			&__website {
 				position: relative;
 				margin-left: 140px;
+				@include sp() {
+					margin: 0 0 25px 0;
+				}
 
 				&:before {
 					left: -40px;
 					top: -3px;
+					@include sp() {
+						left: 0;
+					}
 				}
 
 				&:after {
@@ -1068,18 +1178,29 @@ File Name: style.scss
 					content: "\f109";
 					font-size: 12px;
 					font-weight: bold;
+					@include sp() {
+						left: 6px;
+						top: 3px;
+						font-size: 10px;
+					}
 				}
 
 				a {
 					color: initial;
 					font-size: 16px;
 					text-decoration: underline;
+					@include sp() {
+						@include fz_vw(14);
+					}
 				}
 			}
 
 			&__sns {
 				display: flex;
 				margin-left: 50px;
+				@include sp() {
+					margin: 0;
+				}
 
 				&__item {
 					width: 34px;
