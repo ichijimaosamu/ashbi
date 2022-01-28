@@ -27,7 +27,7 @@
 <div class="main__fv">
 <div class="main__fv__inner">
 <h1 class="main__fv__title">不安と葛藤の神経機構を解明</h1>
-<p class="main__fv__bg"><img src="<?php echo $base_url . '/'; ?>img/main_fv_bg.jpg" alt=""></p>
+<p class="main__fv__bg"><img src="<?php echo $base_url . '/'; ?>img/main_fv_bg.jpg" class="sp_none" alt=""><img src="<?php echo $base_url . '/'; ?>img/main_fv_bg_sp.jpg" class="pc_none" alt=""></p>
 </div>
 </div>
 
@@ -144,11 +144,9 @@ NHK BS1「□□□□□□□□□□」に雨森 賢一PIが出演しまし�
 
 <?php include_once 'common/common_script.php'; ?>
 
-<?php if(false) { ?>
 <!--sp_menu-->
 <?php include_once 'common/sp_menu.php'; ?>
 <!--/sp_menu-->
-<?php } ?>
 
 </body>
 </html>
