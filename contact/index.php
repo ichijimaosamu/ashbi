@@ -27,11 +27,11 @@
 <div class="main__fv -lower">
 <div class="main__fv__inner -lower">
 <h1 class="main__fv__title -lower">お問い合わせ</h1>
-<p class="main__fv__bg -lower"><img src="<?php echo $base_url . '/'; ?>img/contact_main_fv_bg.jpg" alt=""></p>
+<p class="main__fv__bg -lower"><img src="<?php echo $base_url . '/'; ?>img/contact_main_fv_bg.jpg" class="sp_none" alt=""><img src="<?php echo $base_url . '/'; ?>img/contact_main_fv_bg_sp.jpg" class="pc_none" alt=""></p>
 </div>
 </div>
 
-<div class="main__inner">
+<div class="main__inner -contact">
 
 <ol class="breadcrumb-list" itemscope="" itemtype="https://schema.org/BreadcrumbList">
 <li class="breadcrumb-list__item breadcrumb-list__item--home" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="" itemprop="item"><i class="fas fa-fw fa-home"></i><span itemprop="name">HOME</span></a><meta itemprop="position" content="1"></li>
@@ -56,14 +56,14 @@
 <input type="hidden" name="_wpcf7_container_post" value="9">
 <input type="hidden" name="_wpcf7_posted_data_hash" value="">
 </div>
-<p><label class="contact__form__flex"><span class="contact__form__title">お名前<span class="required">必須</span></span><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></label></p>
-<p><label class="contact__form__flex"><span class="contact__form__title">ご所属<span class="required">必須</span></span><span class="wpcf7-form-control-wrap text-239"><input type="text" name="text-239" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></label></p>
-<p><label class="contact__form__flex"><span class="contact__form__title">ご連絡先メールアドレス<span class="required">必須</span></span><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span> </label></p>
-<p><label class="contact__form__flex"><span class="contact__form__title">ご連絡先メールアドレス<span class="required">必須</span></span><span class="wpcf7-form-control-wrap your-email_confirm"><input type="email" name="your-email_confirm" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span> </label></p>
-<p><label class="contact__form__flex"><span class="contact__form__title">件名<span class="required">必須</span></span><span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> </label></p>
+<p><label class="contact__form__flex"><span class="contact__form__title">お名前<span class="required">必須</span></span><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="120" maxlength="120" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></label></p>
+<p><label class="contact__form__flex"><span class="contact__form__title">ご所属<span class="required">必須</span></span><span class="wpcf7-form-control-wrap text-239"><input type="text" name="text-239" value="" size="120" maxlength="120" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></label></p>
+<p><label class="contact__form__flex"><span class="contact__form__title">ご連絡先メールアドレス<span class="required">必須</span></span><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="120" maxlength="120" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span> </label></p>
+<p><label class="contact__form__flex"><span class="contact__form__title">ご連絡先メールアドレス<span class="required">必須</span></span><span class="wpcf7-form-control-wrap your-email_confirm"><input type="email" name="your-email_confirm" value="" size="120" maxlength="120" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span> </label></p>
+<p><label class="contact__form__flex"><span class="contact__form__title">件名<span class="required">必須</span></span><span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="120" maxlength="120" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> </label></p>
 <p><label class="contact__form__flex"><span class="contact__form__title">内容<span class="required">必須</span></span><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></textarea></span> </label></p>
-<p><label><span class="wpcf7-form-control-wrap checkbox-4"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required"><span class="wpcf7-list-item first last"><label><input type="checkbox" name="checkbox-4[]" value="内容をご確認のうえ、こちらにチェックを入れてください。"><span class="wpcf7-list-item-label">内容をご確認のうえ、こちらにチェックを入れてください。</span></label></span></span></span></label></p>
-<p><input type="submit" value="送  信" class="wpcf7-form-control has-spinner wpcf7-submit"><span class="wpcf7-spinner"></span></p>
+<p><span class="wpcf7-form-control-wrap checkbox-4"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required"><span class="wpcf7-list-item first last"><label><input type="checkbox" name="checkbox-4[]" value="内容をご確認のうえ、こちらにチェックを入れてください。"><span class="wpcf7-list-item-label">内容をご確認のうえ、こちらにチェックを入れてください。</span></label></span></span></span></p>
+<p><input type="submit" value="送 信" class="wpcf7-form-control has-spinner wpcf7-submit"><span class="wpcf7-spinner"></span></p>
 <div class="wpcf7-response-output" aria-hidden="true"></div></form>
 </div>
 
@@ -108,11 +108,9 @@
 
 <?php include_once '../common/common_script.php'; ?>
 
-<?php if(false) { ?>
 <!--sp_menu-->
 <?php include_once '../common/sp_menu.php'; ?>
 <!--/sp_menu-->
-<?php } ?>
 
 </body>
 </html>

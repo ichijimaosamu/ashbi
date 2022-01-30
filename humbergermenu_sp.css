@@ -99,14 +99,14 @@
 
 .drawernav__item {
 	margin: 0;
-	line-height: 3.8;
+	line-height: 3.6;
 	border-bottom: 1px solid #B4B4B5;
 }
 
 .drawernav__item a {
 	display: block;
 	color: initial;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 600;
 	text-align: center;
 	text-decoration: none;

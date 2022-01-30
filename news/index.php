@@ -27,7 +27,7 @@
 <div class="main__fv -lower">
 <div class="main__fv__inner -lower">
 <h1 class="main__fv__title -lower">ニュース</h1>
-<p class="main__fv__bg -lower"><img src="<?php echo $base_url . '/'; ?>img/news_main_fv_bg.jpg" alt=""></p>
+<p class="main__fv__bg -lower"><img src="<?php echo $base_url . '/'; ?>img/news_main_fv_bg.jpg" class="sp_none" alt=""><img src="<?php echo $base_url . '/'; ?>img/news_main_fv_bg_sp.jpg" class="pc_none" alt=""></p>
 </div>
 </div>
 
@@ -234,11 +234,9 @@
 
 <?php include_once '../common/common_script.php'; ?>
 
-<?php if(false) { ?>
 <!--sp_menu-->
 <?php include_once '../common/sp_menu.php'; ?>
 <!--/sp_menu-->
-<?php } ?>
 
 </body>
 </html>

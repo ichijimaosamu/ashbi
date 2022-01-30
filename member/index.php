@@ -156,11 +156,9 @@
 
 <?php include_once '../common/common_script.php'; ?>
 
-<?php if(false) { ?>
 <!--sp_menu-->
 <?php include_once '../common/sp_menu.php'; ?>
 <!--/sp_menu-->
-<?php } ?>
 
 </body>
 </html>
