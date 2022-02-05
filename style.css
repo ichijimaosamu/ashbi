@@ -370,7 +370,7 @@ div.alignright {
 .wp-caption-text {
   display: block;
   width: 760px;
-  margin: 32px auto 0;
+  margin: 20px auto 0;
   font-size: 13px !important;
   line-height: 1.76923 !important;
   text-align: left;
@@ -530,7 +530,8 @@ div.alignright {
 
 .chapter {
   display: flex;
-  margin: -15px 0 75px;
+  flex-wrap: wrap;
+  margin: -40px 0 75px;
 }
 @media screen and (max-width: 768px) {
   .chapter {
@@ -539,7 +540,7 @@ div.alignright {
   }
 }
 .chapter__item {
-  margin: 15px 20px 0 0;
+  margin: 40px 20px 0 0;
 }
 @media screen and (max-width: 768px) {
   .chapter__item {
@@ -911,7 +912,19 @@ div.alignright {
 .main__fv.-lower {
   display: flex;
   align-items: center;
+  position: relative;
   height: 300px;
+}
+.main__fv.-lower:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 768px) {
   .main__fv.-lower {
@@ -1424,22 +1437,23 @@ div.alignright {
 .recruit__inner {
   position: relative;
 }
-.recruit__text {
+.recruit p:not(.recruit__pic) {
   position: relative;
   z-index: 1;
+  width: 680px;
   margin-bottom: 40px;
   color: #FFF;
   font-size: 16px;
   line-height: 2.125;
 }
 @media screen and (max-width: 768px) {
-  .recruit__text {
+  .recruit p:not(.recruit__pic) {
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.85714;
   }
 }
-.recruit__text a {
+.recruit p:not(.recruit__pic) a {
   color: #FFF;
   font-weight: bold;
   text-decoration: underline;

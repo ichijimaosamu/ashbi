@@ -91,7 +91,7 @@ div {
 .wp-caption-text {
 	display: block;
 	width: 760px;
-	margin: 32px auto 0;
+	margin: 20px auto 0;
 	font-size: 13px !important;
 	line-height: (23/13) !important;
 	text-align: left;
@@ -242,14 +242,15 @@ div {
 
 .chapter {
 	display: flex;
-	margin: -15px 0 75px;
+	flex-wrap: wrap;
+	margin: -40px 0 75px;
 	@include sp() {
 		flex-wrap: wrap;
 		margin: -5% 4% 10%;
 	}
 
 	&__item {
-		margin: 15px 20px 0 0;
+		margin: 40px 20px 0 0;
 		@include sp() {
 			margin: 8% 3% 0 0;
 		}
@@ -330,7 +331,21 @@ div {
 		&.-lower {
 			display: flex;
 			align-items: center;
+			position: relative;
 			height: 300px;
+
+			&:before {
+				content: "";
+				position: absolute;
+				z-index: 1;
+				left: 0;
+				right: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(#000, .2);
+			}
+
 			@include sp() {
 				display: block;
 				height: auto;
@@ -791,9 +806,10 @@ div {
 		position: relative;
 	}
 
-	&__text {
+	p:not(.recruit__pic) {
 		position: relative;
 		z-index: 1;
+		width: 680px;
 		margin-bottom: 40px;
 		color: #FFF;
 		font-size: 16px;
