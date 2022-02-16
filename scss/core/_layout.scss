@@ -423,12 +423,23 @@
 			}
 		}
 
+		&__box {
+			width: 500px;
+			@include sp() {
+				width: auto;
+			}
+		}
+
 		&__address {
 			font-size: 14px;
 			line-height: (24/14);
 			@include sp() {
 				margin-bottom: 4%;
 				@include fz_vw(13);
+			}
+
+			&:first-of-type {
+				margin-bottom: 20px;
 			}
 		}
 

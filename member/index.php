@@ -38,12 +38,18 @@
 <li class="breadcrumb-list__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="" itemprop="item"><span itemprop="name">メンバー</span></a><meta itemprop="position" content="2"></li>
 </ol>
 
+<div class="chapter_group_name">平岡グループ</div>
 <ul class="chapter">
-<li class="chapter__item"><a href="#chapter1">教員</a></li>
-<li class="chapter__item"><a href="#chapter2">研究員</a></li>
-<li class="chapter__item"><a href="#chapter3">大学院生</a></li>
+<li class="chapter__item"><a href="#chapter8">教員・職員</a></li>
+<li class="chapter__item"><a href="#chapter13">学生</a></li>
 </ul>
 
+<div class="chapter_group_name">李聖林グループ</div>
+<ul class="chapter">
+<li class="chapter__item"><a href="#chapter14">教員・職員</a></li>
+</ul>
+
+<div class="section_group_name">平岡グループ</div>
 <section id="chapter1" class="member__group group">
 <h2 class="group__title">教員</h2>
 
