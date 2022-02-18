@@ -801,20 +801,24 @@ div.alignright {
   width: 1000px;
   margin: auto;
 }
-.header__nav__item {
+.header__nav__item,
+.header__nav li {
   width: 100%;
   border-right: 1px solid #B4B4B5;
 }
-.header__nav__item:first-child {
+.header__nav__item:first-child,
+.header__nav li:first-child {
   border-left: 1px solid #B4B4B5;
 }
-.header__nav__item:hover a {
+.header__nav__item:hover a,
+.header__nav li:hover a {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
   background: #999;
   color: #FFF;
 }
-.header__nav__item a {
+.header__nav__item a,
+.header__nav li a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -823,7 +827,8 @@ div.alignright {
   font-size: 16px;
   font-weight: bold;
 }
-.header__nav__item.-is-active a {
+.header__nav__item.-is-active a,
+.header__nav li.-is-active a {
   background: #999;
   color: #FFF;
 }
